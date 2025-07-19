@@ -50,7 +50,7 @@ if (localStorage.getItem('hasCelebratedBirthday2025') === 'true') {
 }
 
 // Новый таймер до 24:00 20.07.2025 по Томскому времени (UTC+7)
-const targetDate = new Date(Date.UTC(2025, 6, 19, 17, 0, 0)) // 24:00 Томск = 17:00 UTC 20 июля 2025
+const targetDate = new Date(Date.UTC(2025, 6, 19, 15, 0, 0)) // 24:00 Томск = 17:00 UTC 20 июля 2025
 
 const updateTimeElapsed = () => {
   const now = new Date()
@@ -576,7 +576,8 @@ onMounted(() => {
 
 <style scoped>
 .bg-banner {
-  background: url('@/assets/first-block.jpg') no-repeat center center fixed,rgb(223, 140, 167);
+  background: url('@/assets/first-block.jpg') no-repeat center center,rgb(223, 140, 167);
+  background-size: cover;
 }
 
 .swiper {

@@ -10,6 +10,7 @@ import 'swiper/css/pagination'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import yraAudio from '../assets/audio/yra.mp3'
+import giftAudio from '../assets/audio/gift.mp3'
 import Memory1 from '@/assets/memory1.jpg'
 import Memory2 from '@/assets/memory2.jpg'
 import Memory3 from '@/assets/memory3.jpg'
@@ -562,7 +563,7 @@ onMounted(() => {
         <div class="p-4 sm:p-6">
           <p class="text-lg font-semibold text-pink-600 mb-2">Наша песня</p>
           <audio autoplay controls class="w-full">
-            <source :src="yraAudio" type="audio/mpeg">
+            <source :src="giftAudio" type="audio/mpeg">
           </audio>
           <p class="mt-4 text-gray-700 text-center">Я не подарок, но вот твой подарок!</p>
         </div>

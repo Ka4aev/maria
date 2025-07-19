@@ -50,7 +50,7 @@ if (localStorage.getItem('hasCelebratedBirthday2025') === 'true') {
 }
 
 // Новый таймер до 24:00 20.07.2025 по Томскому времени (UTC+7)
-const targetDate = new Date(Date.UTC(2025, 6, 19, 17, 0, 0)) // 24:00 Томск = 17:00 UTC 20 июля 2025
+const targetDate = new Date(Date.UTC(2025, 6, 19, 19, 0, 0)) // 24:00 Томск = 17:00 UTC 20 июля 2025
 
 const updateTimeElapsed = () => {
   const now = new Date()
